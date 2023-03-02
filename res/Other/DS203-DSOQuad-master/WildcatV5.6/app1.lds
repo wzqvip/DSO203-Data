@@ -1,0 +1,11 @@
+/* Define memory regions. */
+MEMORY
+{
+
+  rom (rx) : ORIGIN = 0x0800C000, LENGTH = 64K
+  extra (rx) : ORIGIN = 0x08048000, LENGTH = 128K
+  ram (rwx) : ORIGIN = 0x20003000, LENGTH = 48K        
+
+}
+
+INCLUDE main.lds
